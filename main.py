@@ -42,15 +42,10 @@ root.bind('<Right>',right)
 root.bind('<Up>',up)
 root.bind('<Down>',down)
 
-
-    
-
-
-
-
-
-
-
+#Line1
+can.create_line(600,350,-100,350,fill="white")
+#Line2
+can.create_line(600,250,-100,250,fill="white")
 
 
 root.mainloop()
