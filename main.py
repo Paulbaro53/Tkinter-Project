@@ -13,7 +13,7 @@ y=h // 2
 can=Canvas(root,width=w, height=h, bg='black')
 can.pack()
 
-my_chr=can.create_rectangle(x,y,x+10,y+10, outline="red")
+my_chr=can.create_rectangle(x,y,x+20,y+20, outline="red")
 
 #Movement functions
 def left(event):
@@ -41,6 +41,8 @@ root.bind('<Left>',left)
 root.bind('<Right>',right)
 root.bind('<Up>',up)
 root.bind('<Down>',down)
+
+can.coords(my_chr, 100, 350, x-50, y-50)
 
 #Line1
 can.create_line(600,350,-100,350,fill="white")
